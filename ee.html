@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+  .txt7 {
+  	color: ;
+  	position : relative;
+      top: 355px;
+      left: 60px;
+   }
+   
+.bg {
+  /* The image used */
+  background-image: url('./img_girl.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bg">
+	<h2 id="datetime" class="txt7"></h2>
+</div>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = (dt.getFullYear()) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+  (("0"+dt.getDate()).slice(-2)) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2))+":"+ (("0"+dt.getSeconds()).slice(-2));
+
+</script>
+
+</body>
+</html>
